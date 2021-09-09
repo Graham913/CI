@@ -30,7 +30,7 @@ Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com
 Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://www.markdownguide.org/basic-syntax/)
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+it was relatively easy but I forgot how to make the neopixel blink from last time we used it so after I watched the video it made sense.
 
 
 
