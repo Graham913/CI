@@ -38,12 +38,9 @@ while True:
 
 
 ### Evidence
-Pictures / Gifs of your work should go here
-
+![graham pic1](https://i.ytimg.com/vi/X_TXoVbq9oo/maxresdefault.jpg)
 ### Images
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://www.markdownguide.org/basic-syntax/)
-
+I just used the neopixel that was built into the adafruit metro express
 ### Reflection
 it was relatively easy but I forgot how to make the neopixel blink from last time we used it so after I watched the video it made sense.
 
