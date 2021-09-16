@@ -88,7 +88,7 @@ while True:
 ### Images
 
 ### Reflection
-
+This was much more difficult then the previous assignment. I had issues for timing and I had to figure out how to combine the if touch and the for angle which I didn't really get but overall not too bad.
 
 
 
