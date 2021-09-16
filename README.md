@@ -84,6 +84,7 @@ while True:
 ```
 
 ### Evidence
+![Captouch wiring](https://user-images.githubusercontent.com/71406930/133624920-48544cc9-975f-4714-98aa-9c8a3528aef3.png)
 
 ### Images
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/71406930/133623520-758b1186-d83c-476a-808e-5f681fed7ae7.gif)
