@@ -86,6 +86,7 @@ while True:
 ### Evidence
 
 ### Images
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71406930/133623520-758b1186-d83c-476a-808e-5f681fed7ae7.gif)
 
 ### Reflection
 This was much more difficult then the previous assignment. I had issues for timing and I had to figure out how to combine the if touch and the for angle which I didn't really get but overall not too bad.
