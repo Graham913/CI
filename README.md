@@ -94,12 +94,45 @@ You can get a lot of information in the adafruit forums and that helped a lot in
 
 
 
-## CircuitPython_LCD
+## CircuitPython_distance sensor
 
 ### Description & Code
 
 ```python
 Code goes here
+import time
+import board
+import adafruit_hcsr04
+import neopixel
+import simpleio
+
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.5
+
+cm = 0
+print("new code!")
+
+while True:
+    try:
+        cm = sonar.distance
+        print((cm,))
+
+        if cm < 5:
+            dot.fill((255, 0, 0))
+        elif cm < 20:
+            r = simpleio.map_range(cm, 5, 20, 255, 0)
+            g = 0
+            b = simpleio.map_range(cm, 5, 20, 0, 255)
+            dot.fill((int(r), int(g), int(b)))
+        else:
+            r = 0
+            g = simpleio.map_range(cm, 20, 35, 0, 255)
+            b = simpleio.map_range(cm, 20, 35, 255, 0)
+            dot.fill((int(r), int(g), int(b)))
+    except RuntimeError:
+        print("Retrying!")
+    time.sleep(0.1)
 
 ```
 
