@@ -137,12 +137,12 @@ while True:
 ```
 
 ### Evidence
-
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71406930/134513956-0c523336-479d-4557-9cab-a61886148155.gif)
 ### Images
 ![distance.sensor](https://user-images.githubusercontent.com/71406930/134190731-f80e0f4c-b342-412d-a34d-da1487bf9d50.png)
 
 ### Reflection
-
+Using the simpleio library and memorizing the html color codes can help with this as well as an understanding of variables. Using old code can reducing work time and speeds everything up so if you have old code make sure to use it.
 
 
 
