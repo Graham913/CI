@@ -26,9 +26,9 @@ dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
 
 while True:
-    print("Make it green!")
-    dot.fill((0,255,0))
-    time.sleep(.5)
+    print("Make it green!") # makes serial monitor say Make it green!
+    dot.fill((0,255,0))  # rgb color code for green
+    time.sleep(.5) # sleep inbetween switching colors
     print("Make it red!")
     dot.fill((255,0,0))
     time.sleep(.5)
@@ -74,12 +74,12 @@ my_servo = servo.Servo(pwm)
 while True:
     if touch1.value:
         print("Touched A1!")
-        for angle in range(0, 180, 1):  # 0 - 180 degrees, 5 degrees at a time.
+        for angle in range(0, 180, 1):  # 0 - 180 degrees, 5 degrees at a time. # moves servo one direction 180 degrees when I touch a wire
             my_servo.angle = angle
             time.sleep(0.01)
     if touch2.value:
         print("Touched A3!")
-        for angle in range(180, 0, -1):   # 180 - 0 degrees, 5 degrees at a time.
+        for angle in range(180, 0, -1):   # 180 - 0 degrees, 5 degrees at a time. # moves servo another direction 180 degrees when I touch a wire
             my_servo.angle = angle
             time.sleep(0.01)
     time.sleep(0.05)
@@ -111,7 +111,7 @@ import adafruit_hcsr04
 import neopixel
 import simpleio
 
-sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6) # pins for ultrasonic sensor
 dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
 dot.brightness = 0.5
 
@@ -123,14 +123,14 @@ while True:
         cm = sonar.distance
         print((cm,))
 
-        if cm < 5:
+        if cm < 5: # if the distance is less than 5 cm the color is red
             dot.fill((255, 0, 0))
-        elif cm < 20:
+        elif cm < 20: # if distance is above 5 cm gradually change to blue until 20 cm
             r = simpleio.map_range(cm, 5, 20, 255, 0)
             g = 0
             b = simpleio.map_range(cm, 5, 20, 0, 255)
             dot.fill((int(r), int(g), int(b)))
-        else:
+        else: # if distance is above 20 cm gradually change to green
             r = 0
             g = simpleio.map_range(cm, 20, 35, 0, 255)
             b = simpleio.map_range(cm, 20, 35, 255, 0)
