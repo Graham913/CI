@@ -12,7 +12,8 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+Make the neopixel built into the adafruit metro express change colors and say what color it is in the serial monitor 
+I used the dot.fill code to make the neopixel change colors and I used the time.sleep command to make it sleep in between colors and I used the print command to say what color it is on the serial monitor.
 
 Here's how you make code look like code:
 
@@ -39,6 +40,7 @@ while True:
 
 ### Evidence
 ![graham pic1](https://i.ytimg.com/vi/X_TXoVbq9oo/maxresdefault.jpg)
+Adafruit metro express with white neopixel turned on
 ### Images
 I just used the neopixel that was built into the adafruit metro express
 ### Reflection
@@ -50,7 +52,8 @@ it was relatively easy but I forgot how to make the neopixel blink from last tim
 ## CircuitPython_Servo
 
 ### Description & Code
-
+Make a servo move using capacitive touch
+I used two wires to make a servo move either left or right using capacitive touch
 ```python
 
 import time
@@ -85,7 +88,7 @@ while True:
 
 ### Evidence
 ![Captouch wiring](https://user-images.githubusercontent.com/71406930/133624920-48544cc9-975f-4714-98aa-9c8a3528aef3.png)
-
+wiring for capacitive touch, the two wires sticking out are what I used for the capacitive touch
 ### Images
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/71406930/133623520-758b1186-d83c-476a-808e-5f681fed7ae7.gif)
 
@@ -95,7 +98,9 @@ You can get a lot of information in the adafruit forums and that helped a lot in
 
 
 ## CircuitPython_distance sensor
+Make the neopixel change from red to blue to green graduaolly using the distance sensor
 
+I used the MAP function to gradually change the colors of the neopixel when I moved my phone further away from it
 ### Description & Code
 
 ```python
@@ -140,7 +145,7 @@ while True:
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71406930/134513956-0c523336-479d-4557-9cab-a61886148155.gif)
 ### Images
 ![distance.sensor](https://user-images.githubusercontent.com/71406930/134190731-f80e0f4c-b342-412d-a34d-da1487bf9d50.png)
-
+ultrasonic sensor to detect how far something is away and shown with neopixel
 ### Reflection
 Using the simpleio library and memorizing the html color codes can help with this as well as an understanding of variables. Using old code can reducing work time and speeds everything up so if you have old code make sure to use it.
 
